@@ -14,9 +14,11 @@ class NegativeAmountException extends Exception {
         try {
             System.out.print("Enter amount: ");
             int amount = sc.nextInt();
+            sc.close();
 
             if (amount < 0) {
                 throw new NegativeAmountException("Amount cannot be negative!");
+                
             }
 
             System.out.println("Valid amount entered: " + amount);
@@ -30,6 +32,5 @@ class NegativeAmountException extends Exception {
             System.out.println("Invalid input!");
         }
 
-        sc.close();
     }
 }
