@@ -1,4 +1,4 @@
-import java.util.*;
+
 class MyNewThread implements Runnable{
     public void run(){
         for(char i='A'; i<='F'; i++){
